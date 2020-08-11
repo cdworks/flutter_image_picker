@@ -1,11 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="io.flutter.plugins.imagepicker">
-   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
+  package="com.works.works_image_picker">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application>
         <provider
-            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+            android:name="com.works.works_image_picker.ImagePickerFileProvider"
             android:authorities="${applicationId}.flutter.image_provider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -14,9 +13,9 @@
                 android:resource="@xml/flutter_image_picker_file_paths"/>
         </provider>
         <activity
-                android:name="RecorderVideoActivity"
-                android:screenOrientation="portrait"
-                android:theme="@style/push_slide"
-                android:windowSoftInputMode="stateAlwaysHidden" />
+            android:name="RecorderVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/push_slide"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 </manifest>
