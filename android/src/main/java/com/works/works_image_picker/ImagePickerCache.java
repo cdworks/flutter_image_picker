@@ -50,9 +50,9 @@ class ImagePickerCache {
   }
 
   void saveTypeWithMethodCallName(String methodCallName) {
-    if (methodCallName.equals(ImagePickerPlugin.METHOD_CALL_IMAGE)) {
+    if (methodCallName.equals(WorksImagePickerPlugin.METHOD_CALL_IMAGE)) {
       setType("image");
-    } else if (methodCallName.equals(ImagePickerPlugin.METHOD_CALL_VIDEO)) {
+    } else if (methodCallName.equals(WorksImagePickerPlugin.METHOD_CALL_VIDEO)) {
       setType("video");
     }
   }
